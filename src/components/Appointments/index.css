@@ -1,0 +1,87 @@
+/* Write your CSS here */
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+  min-height: 100vh;
+  padding: 60px;
+}
+.appointment-heading {
+  color: #171f46;
+  font-size: 40px;
+  font-family: 'Roboto';
+}
+.card-container {
+  background-color: white;
+  border-radius: 8px;
+  width: 80%;
+  padding: 32px;
+}
+.label-heading {
+  color: #b5b7c4;
+  font-size: 15px;
+  font-family: 'Roboto';
+}
+.input {
+  outline: none;
+  margin-bottom: 12px;
+  margin-top: 8px;
+  padding: 8px;
+  width: 320px;
+}
+.button {
+  background-color: #8b5cf6;
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 8px;
+  border-width: 0px;
+  width: 80px;
+}
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appointment-image {
+  height: 240px;
+  width: 280px;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.form-container {
+  margin-right: auto;
+}
+.starred-button {
+  background-color: transparent;
+  color: #8b5cf6;
+  font-size: 12px;
+  border: 2px solid #8b5cf6;
+  font-family: 'Roboto';
+  height: 30px;
+  width: 90px;
+  border-radius: 10px;
+}
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.unordered-list {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0px;
+  flex-wrap: wrap;
+}
+.unStarred-button {
+  background-color: #8b5cf6;
+  color: white;
+  font-size: 12px;
+  border-width: 0px;
+  font-family: 'Roboto';
+  height: 30px;
+  width: 90px;
+  border-radius: 10px;
+}
