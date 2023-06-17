@@ -17,11 +17,16 @@ const AppointmentItem = props => {
     <li className="list-container">
       <div className="inside-list-container">
         <p className="title-heading">{title}</p>
-        <button type="button" className="star-button" onClick={starredStar}>
-          <img src={imgUrl} alt="star" data-testid="star" />
+        <button
+          type="button"
+          className="star-button"
+          onClick={starredStar}
+          data-testid="star"
+        >
+          <img src={imgUrl} alt="star" />
         </button>
       </div>
-      <p className="date-heading">Date:{date}</p>
+      <p className="date-heading">Date: {date}</p>
     </li>
   )
 }

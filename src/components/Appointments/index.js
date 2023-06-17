@@ -27,12 +27,14 @@ class Appointments extends Component {
     event.preventDefault()
     const {title, date} = this.state
 
-    const DateInput = date ? format(new Date(date), 'dd MMMM yyyy,EEEE') : ''
+    const formattedDate = date
+      ? format(new Date(date), 'dd MMMM yyyy,EEEE')
+      : ''
 
     const newAppoint = {
       id: uuidv4(),
       title,
-      date: DateInput,
+      date: formattedDate,
       isStarred: false,
     }
     this.setState(preVState => ({
@@ -108,7 +110,6 @@ class Appointments extends Component {
                 type="submit"
                 className="button"
                 onClick={this.onAddAppointment}
-                data-testid="star"
               >
                 Add
               </button>
@@ -126,7 +127,6 @@ class Appointments extends Component {
               type="button"
               className={buttonColor}
               onClick={this.getStarredItems}
-              data-testid="star"
             >
               Starred
             </button>
